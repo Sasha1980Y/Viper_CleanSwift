@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		7F6147861FD7EE34009EDF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6147851FD7EE34009EDF4B /* AppDelegate.swift */; };
-		7F6147881FD7EE34009EDF4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6147871FD7EE34009EDF4B /* ViewController.swift */; };
 		7F61478B1FD7EE34009EDF4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F6147891FD7EE34009EDF4B /* Main.storyboard */; };
 		7F61478D1FD7EE34009EDF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F61478C1FD7EE34009EDF4B /* Assets.xcassets */; };
 		7F6147901FD7EE34009EDF4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F61478E1FD7EE34009EDF4B /* LaunchScreen.storyboard */; };
+		7F61479C1FD7EEFB009EDF4B /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F61479B1FD7EEFB009EDF4B /* PhotoViewController.swift */; };
+		7F61479E1FD7EF2D009EDF4B /* PhotoSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F61479D1FD7EF2D009EDF4B /* PhotoSearchInteractor.swift */; };
+		7F6147A01FD7EF4E009EDF4B /* PhotoSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F61479F1FD7EF4E009EDF4B /* PhotoSearchPresenter.swift */; };
+		7F6147A21FD7EF6B009EDF4B /* PhotaSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6147A11FD7EF6B009EDF4B /* PhotaSearchRouter.swift */; };
+		7F6147A41FD7EF90009EDF4B /* PhotoSearchAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6147A31FD7EF90009EDF4B /* PhotoSearchAssembly.swift */; };
+		7F6147A61FD7EFD5009EDF4B /* FlickerPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6147A51FD7EFD5009EDF4B /* FlickerPhotoModel.swift */; };
+		7FC5AE031FD81D0000EFD35A /* FlickrDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5AE021FD81D0000EFD35A /* FlickrDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F6147821FD7EE34009EDF4B /* FlickerViperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickerViperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F6147851FD7EE34009EDF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F6147871FD7EE34009EDF4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F61478A1FD7EE34009EDF4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F61478C1FD7EE34009EDF4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F61478F1FD7EE34009EDF4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F6147911FD7EE34009EDF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F61479B1FD7EEFB009EDF4B /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		7F61479D1FD7EF2D009EDF4B /* PhotoSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchInteractor.swift; sourceTree = "<group>"; };
+		7F61479F1FD7EF4E009EDF4B /* PhotoSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchPresenter.swift; sourceTree = "<group>"; };
+		7F6147A11FD7EF6B009EDF4B /* PhotaSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotaSearchRouter.swift; sourceTree = "<group>"; };
+		7F6147A31FD7EF90009EDF4B /* PhotoSearchAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchAssembly.swift; sourceTree = "<group>"; };
+		7F6147A51FD7EFD5009EDF4B /* FlickerPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotoModel.swift; sourceTree = "<group>"; };
+		7FC5AE021FD81D0000EFD35A /* FlickrDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,52 @@
 		7F6147841FD7EE34009EDF4B /* FlickerViperTest */ = {
 			isa = PBXGroup;
 			children = (
+				7F6147971FD7EE45009EDF4B /* Services */,
+				7F6147981FD7EE64009EDF4B /* Models */,
+				7F6147991FD7EE70009EDF4B /* PhotoSearch */,
 				7F6147851FD7EE34009EDF4B /* AppDelegate.swift */,
-				7F6147871FD7EE34009EDF4B /* ViewController.swift */,
 				7F6147891FD7EE34009EDF4B /* Main.storyboard */,
 				7F61478C1FD7EE34009EDF4B /* Assets.xcassets */,
 				7F61478E1FD7EE34009EDF4B /* LaunchScreen.storyboard */,
 				7F6147911FD7EE34009EDF4B /* Info.plist */,
 			);
 			path = FlickerViperTest;
+			sourceTree = "<group>";
+		};
+		7F6147971FD7EE45009EDF4B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5AE021FD81D0000EFD35A /* FlickrDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7F6147981FD7EE64009EDF4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F6147A51FD7EFD5009EDF4B /* FlickerPhotoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F6147991FD7EE70009EDF4B /* PhotoSearch */ = {
+			isa = PBXGroup;
+			children = (
+				7F61479A1FD7EEBF009EDF4B /* Modules */,
+			);
+			path = PhotoSearch;
+			sourceTree = "<group>";
+		};
+		7F61479A1FD7EEBF009EDF4B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7F61479B1FD7EEFB009EDF4B /* PhotoViewController.swift */,
+				7F61479D1FD7EF2D009EDF4B /* PhotoSearchInteractor.swift */,
+				7F61479F1FD7EF4E009EDF4B /* PhotoSearchPresenter.swift */,
+				7F6147A11FD7EF6B009EDF4B /* PhotaSearchRouter.swift */,
+				7F6147A31FD7EF90009EDF4B /* PhotoSearchAssembly.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F6147881FD7EE34009EDF4B /* ViewController.swift in Sources */,
+				7F6147A41FD7EF90009EDF4B /* PhotoSearchAssembly.swift in Sources */,
 				7F6147861FD7EE34009EDF4B /* AppDelegate.swift in Sources */,
+				7FC5AE031FD81D0000EFD35A /* FlickrDataManager.swift in Sources */,
+				7F6147A01FD7EF4E009EDF4B /* PhotoSearchPresenter.swift in Sources */,
+				7F61479E1FD7EF2D009EDF4B /* PhotoSearchInteractor.swift in Sources */,
+				7F6147A21FD7EF6B009EDF4B /* PhotaSearchRouter.swift in Sources */,
+				7F61479C1FD7EEFB009EDF4B /* PhotoViewController.swift in Sources */,
+				7F6147A61FD7EFD5009EDF4B /* FlickerPhotoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
