@@ -8,8 +8,8 @@
 
 import Foundation
 
-protocol PhotoSearchPresenterInput: PhotoViewControllerOutput {
-    
+protocol PhotoSearchPresenterInput: class {
+    func fetchPhotos()
 }
 
 class PhotoSearchPresenter: PhotoSearchPresenterInput {

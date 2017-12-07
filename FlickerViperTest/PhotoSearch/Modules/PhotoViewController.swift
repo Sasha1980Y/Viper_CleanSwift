@@ -17,7 +17,7 @@ class PhotoViewController: UIViewController {
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
     
-    var presenter: PhotoViewControllerOutput!
+    var presenter: PhotoSearchPresenterInput!
     
     override func awakeFromNib() {
         super.awakeFromNib()
