@@ -9,7 +9,12 @@
 import Foundation
 
 protocol PhotoSearchPresenterInput: class {
+    // read from UserDefault
     func fetchPhotos()
+    // write to UserDefault
+    func writeData(name: String)
+    // return name from UserDefault
+    func returnNameFromUserDefaultPresenter() -> String
 }
 
 class PhotoSearchPresenter: PhotoSearchPresenterInput {
@@ -20,5 +25,12 @@ class PhotoSearchPresenter: PhotoSearchPresenterInput {
     func fetchPhotos(){
         interactor.fetchAllPhotosFromDataManager()
     }
-    
+    // write to UserDefault
+    func writeData(name: String) {
+        interactor.writeToUserDefault(name: name)
+    }
+    // return name from UserDefault
+    func returnNameFromUserDefaultPresenter() -> String {
+        return interactor.returnNameFromUserDefault()
+    }
 }

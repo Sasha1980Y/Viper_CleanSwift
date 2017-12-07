@@ -27,22 +27,41 @@ class PhotoViewController: UIViewController {
         super.viewDidLoad()
 
     }
-    
+    // read from UserDefault
     func performSearchWith() {
         presenter.fetchPhotos()
     }
+    // write to UserDefault
+    func performWriteToUserDefault(name: String) {
+        presenter.writeData(name: name)
+    }
+    // return name from UserDefault
+    func returnNameFromUserDefaultPresenter() -> String {
+        return presenter.returnNameFromUserDefaultPresenter()
+    }
 
     @IBAction func saveName(_ sender: UIButton) {
-        
+        /*
         let defaults = UserDefaults.standard
         if let name = enterNameTextField.text {
             defaults.set(name, forKey: "Phone")
+        }
+        */
+        
+        if let name = enterNameTextField.text {
+            performWriteToUserDefault(name: name)
         }
         
     }
     
     @IBAction func getName(_ sender: UIButton) {
+        
+        /*
+         // here only print name
         performSearchWith()
+        */
+        
+        nameLabel.text = returnNameFromUserDefaultPresenter()
         
         /*
         let defaults = UserDefaults.standard
