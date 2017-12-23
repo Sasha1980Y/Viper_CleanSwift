@@ -15,11 +15,14 @@ protocol PhotoSearchPresenterInput: class {
     func writeData(name: String)
     // return name from UserDefault
     func returnNameFromUserDefaultPresenter() -> String
+    // go to photo detail VC
+    func gotoPhotoDetailScreen()
 }
 
 class PhotoSearchPresenter: PhotoSearchPresenterInput {
     
     var interactor: PhotoSearchInteractorInput!
+    var router: PhotoSearchRouterInput!
     
     // Presenter saysinteractor ViewController needs photos
     func fetchPhotos(){
@@ -32,5 +35,8 @@ class PhotoSearchPresenter: PhotoSearchPresenterInput {
     // return name from UserDefault
     func returnNameFromUserDefaultPresenter() -> String {
         return interactor.returnNameFromUserDefault()
+    }
+    func gotoPhotoDetailScreen() {
+        self.router.navigateToPhotoDetail()
     }
 }

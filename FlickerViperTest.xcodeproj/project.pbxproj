@@ -17,6 +17,7 @@
 		7F6147A21FD7EF6B009EDF4B /* PhotaSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6147A11FD7EF6B009EDF4B /* PhotaSearchRouter.swift */; };
 		7F6147A41FD7EF90009EDF4B /* PhotoSearchAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6147A31FD7EF90009EDF4B /* PhotoSearchAssembly.swift */; };
 		7F6147A61FD7EFD5009EDF4B /* FlickerPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6147A51FD7EFD5009EDF4B /* FlickerPhotoModel.swift */; };
+		7FB77A3F1FDA965A00704657 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB77A3E1FDA965A00704657 /* DetailViewController.swift */; };
 		7FC5AE031FD81D0000EFD35A /* FlickrDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5AE021FD81D0000EFD35A /* FlickrDataManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		7F6147A11FD7EF6B009EDF4B /* PhotaSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotaSearchRouter.swift; sourceTree = "<group>"; };
 		7F6147A31FD7EF90009EDF4B /* PhotoSearchAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchAssembly.swift; sourceTree = "<group>"; };
 		7F6147A51FD7EFD5009EDF4B /* FlickerPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotoModel.swift; sourceTree = "<group>"; };
+		7FB77A3E1FDA965A00704657 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7FC5AE021FD81D0000EFD35A /* FlickrDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				7F61479B1FD7EEFB009EDF4B /* PhotoViewController.swift */,
+				7FB77A3E1FDA965A00704657 /* DetailViewController.swift */,
 				7F61479D1FD7EF2D009EDF4B /* PhotoSearchInteractor.swift */,
 				7F61479F1FD7EF4E009EDF4B /* PhotoSearchPresenter.swift */,
 				7F6147A11FD7EF6B009EDF4B /* PhotaSearchRouter.swift */,
@@ -186,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB77A3F1FDA965A00704657 /* DetailViewController.swift in Sources */,
 				7F6147A41FD7EF90009EDF4B /* PhotoSearchAssembly.swift in Sources */,
 				7F6147861FD7EE34009EDF4B /* AppDelegate.swift in Sources */,
 				7FC5AE031FD81D0000EFD35A /* FlickrDataManager.swift in Sources */,

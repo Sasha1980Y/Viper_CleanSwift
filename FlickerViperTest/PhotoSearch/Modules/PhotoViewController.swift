@@ -71,4 +71,18 @@ class PhotoViewController: UIViewController {
         */
     }
     
+    
+    
+    @IBAction func showSomeVC(_ sender: Any) {
+        self.presenter.gotoPhotoDetailScreen()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detail" {
+            print("detail")
+        } else {
+            print("another")
+        }
+    }
+    
 }
